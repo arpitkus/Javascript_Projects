@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+
+    <style>
+        .buttonHighlighted {
+            background-color: #4CAF50; /* Green color */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="demoParagraph">This is a sample paragraph.</p>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        // Select the button and paragraph elements using their IDs
+        var changeTextButton = document.getElementById("changeTextButton");
+        var demoParagraph = document.getElementById("demoParagraph");
+
+        // Add an event listener to the button
+        changeTextButton.addEventListener("click", function() {
+            // Change the text content of the paragraph when the button is clicked
+            demoParagraph.textContent = "Text changed with JavaScript!";
+        });
+    </script>
+
+</body>
+</html>
